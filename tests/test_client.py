@@ -8,8 +8,6 @@ import pytest
 
 from client.cli import build_url, parse_input, render_event
 
-pytestmark = pytest.mark.skip(reason="Pendiente: cliente del Integrante 2")
-
 
 def test_build_url():
     assert build_url("127.0.0.1", 8000) == "ws://127.0.0.1:8000/ws"
